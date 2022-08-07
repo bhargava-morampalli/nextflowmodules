@@ -23,7 +23,7 @@ process tomboextract_23s {
     import pandas as pd
 
     sample_level_stats = tombo_stats.LevelStats("$statfile")
-    reg_level_stats = sample_level_stats.get_reg_stats('23s1_extended', '+', 1, 3163)
+    reg_level_stats = sample_level_stats.get_reg_stats('23s_78_rrlB', '+', 1, 3163)
     pd.DataFrame(reg_level_stats).to_csv("${statfile.simpleName}.csv")
 
     """

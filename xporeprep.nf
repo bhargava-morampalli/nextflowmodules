@@ -11,6 +11,7 @@ process xporeprep {
 
     input:
     path eventalign
+    val flag
 
     output:
     path "dataprep/data.log", emit: xporelog

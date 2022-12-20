@@ -9,6 +9,10 @@ process f5ceventalign {
     publishDir "$params.outdir/eventalign_ivt_16s", pattern: "ivt*16s*", mode:'copy'
     publishDir "$params.outdir/eventalign_ivt_23s", pattern: "ivt*23s*", mode:'copy'
 
+    tag "eventalign using f5c (nanopolish)"
+
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/f5c:1.1'
+
     input:
     tuple path(fastq), path(index), path(fai), path(gzi), path(readdb)
     tuple path(bam), path(bai)

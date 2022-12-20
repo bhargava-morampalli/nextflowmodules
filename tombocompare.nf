@@ -7,8 +7,9 @@ process tombocompare {
     publishDir "$params.outdir/tombostat_16s", pattern: "*16s*", mode:'copy'
     publishDir "$params.outdir/tombostat_23s", pattern: "*23s*", mode:'copy'
 
-
     tag "tombo level sample compare"
+
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/ont-tombo:1.5.1'
 
     input:
     path native_singlefast5s

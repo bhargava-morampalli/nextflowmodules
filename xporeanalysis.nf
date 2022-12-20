@@ -1,6 +1,8 @@
 process xporeanalysis {
     
     publishDir "$params.outdir/xporefinal_${yaml.simpleName}", mode:'copy'
+
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/xpore:2.1'
     
     input:
     path yamlfile

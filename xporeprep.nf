@@ -9,6 +9,8 @@ process xporeprep {
 
     tag "prepare the data for xpore analysis"
 
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/xpore:2.1'
+
     input:
     path eventalign
     val flag

@@ -11,6 +11,8 @@ process f5cindex {
 
     tag "nanopolish index using f5c"
 
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/f5c:1.1'
+
     input:
     path multifast5s
     path fastq

@@ -8,6 +8,8 @@ process tomboresquiggle {
 
     tag "resquiggle fast5s with tombo"
 
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/ont-tombo:1.5.1'
+
     input:
     path singlefast5s
     path reference

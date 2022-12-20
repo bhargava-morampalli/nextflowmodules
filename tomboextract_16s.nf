@@ -8,6 +8,8 @@ process tomboextract_16s {
 
     tag "extracting p values from tombo stat files for 16s"
 
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/ont-tombo:1.5.1'
+
     input:
     path statfile
     val flag

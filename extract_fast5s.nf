@@ -8,6 +8,8 @@ process extract_fast5s {
     
     tag "extract multifast5s for mapped reads"
 
+    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/ont-fast5-api:4.1.0'
+
     input:
     path fast5inputpath
     path idtextfile

@@ -2,7 +2,7 @@
  * Get coverage plots from depth files for native and IVT data
  */
 
-process coverageplot_16s_native {
+process coverageplots {
 
     publishDir "$params.outdir/coverageplots16s_native", pattern: "*native*16s*", mode:'copy'
     publishDir "$params.outdir/coverageplots16s_ivt", pattern: "*ivt*16s*", mode:'copy'

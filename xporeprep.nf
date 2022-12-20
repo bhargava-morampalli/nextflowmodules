@@ -26,6 +26,6 @@ process xporeprep {
     xpore dataprep \
     --eventalign $eventalign \
     --out_dir dataprep \
-    --n_processes 10
+    --n_processes 50
     """
 }

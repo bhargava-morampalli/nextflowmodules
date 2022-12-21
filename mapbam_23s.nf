@@ -4,8 +4,8 @@
 
 process mapbam_23s {
 
-    publishDir "$params.outdir/mappedbams_23s_native", pattern: "native*23s*", mode:'copy'
-    publishDir "$params.outdir/mappedbams_23s_ivt", pattern: "ivt*23s*", mode:'copy'
+    publishDir "$params.outdir/mappedbams_23s_native", pattern: "*native*23s*", mode:'copy'
+    publishDir "$params.outdir/mappedbams_23s_ivt", pattern: "*ivt*23s*", mode:'copy'
     
     tag "map native and ivt fastqs to 23s rRNA reference using minimap2"
 

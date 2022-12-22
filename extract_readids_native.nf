@@ -9,7 +9,7 @@ process extract_readids_native {
 
     tag "extract mapped read ids from fastqs to text file"
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/seqkit:2.3.1'
+    container '/home/bhargavam/Documents/containers/seqkit_2.3.1--h9ee0642_0.sif'
 
     input:
     path mappedfastqs

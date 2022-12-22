@@ -11,7 +11,7 @@ process extractmappedreads {
     
     tag "extract mapped reads from sam files into fastq"
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/samtools:1.16.1'
+    container '/home/bhargavam/Documents/containers/samtools_1.16.1--h6899075_1.sif'
 
     input:
     path sams

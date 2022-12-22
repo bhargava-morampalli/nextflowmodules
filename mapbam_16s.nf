@@ -9,9 +9,8 @@ process mapbam_16s {
     
     tag "map native and ivt fastqs to 16s rRNA reference using minimap2"
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/minimap2:2.24'
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/samtools:1.16.1'
-
+    container '/home/bhargavam/Documents/containers/minimap_samtools.sif'
+    
     input:
     path reference_16s
     path mappedfastqs

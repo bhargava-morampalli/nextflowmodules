@@ -16,7 +16,7 @@ process map_23s {
     path fastqs
 
     output:
-    path "*_23s.sam", emit: native23sams
+    path "*_23s.sam", emit: sams
 
     script:
 

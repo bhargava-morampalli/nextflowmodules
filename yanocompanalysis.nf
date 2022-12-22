@@ -5,9 +5,12 @@
 
 process yanocompanalysis {
 
-    conda '/home/bhargavam/anaconda3/envs/yanocomp'
     publishDir "$params.outdir/yanofinal_16s", pattern: "*16s*", mode:'copy'
     publishDir "$params.outdir/yanofinal_23s", pattern: "*23s*", mode:'copy'
+
+    tag "yanocomp compare to get mods"
+
+    container '/home/bhargavam/Documents/containers/yanocomp.sif'
 
 
     input:

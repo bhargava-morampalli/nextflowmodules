@@ -8,7 +8,7 @@ process tomboresquiggle {
 
     tag "resquiggle fast5s with tombo"
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/ont-tombo:1.5.1'
+    container '/home/bhargavam/Documents/containers/ont-tombo_1.5.1--py36r36h39af1c6_2.sif'
 
     input:
     path singlefast5s

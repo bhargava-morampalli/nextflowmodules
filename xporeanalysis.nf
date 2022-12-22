@@ -1,8 +1,14 @@
+/*
+ * Dataprep for xpore
+ */
+
 process xporeanalysis {
     
     publishDir "$params.outdir/xporefinal_${yaml.simpleName}", mode:'copy'
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/xpore:2.1'
+    tag "xpore analysis step"
+
+    container '/home/bhargavam/Documents/containers/xpore_2.1--pyh5e36f6f_0.sif'
     
     input:
     path yamlfile

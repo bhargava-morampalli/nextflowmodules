@@ -9,7 +9,7 @@ process xporeprep {
 
     tag "prepare the data for xpore analysis"
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/xpore:2.1'
+    container '/home/bhargavam/Documents/containers/xpore_2.1--pyh5e36f6f_0.sif'
 
     input:
     path eventalign

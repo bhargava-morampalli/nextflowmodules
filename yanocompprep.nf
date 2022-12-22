@@ -5,8 +5,11 @@
 
 process yanocompprep {
 
-    conda '/home/bhargavam/anaconda3/envs/yanocomp'
     publishDir "$params.outdir/yano_${summarytext.simpleName}", mode:'copy'
+
+    tag "prepare data for yanocomp"
+
+    container '/home/bhargavam/Documents/containers/yanocomp.sif'
 
     input:
     path eventaligntext

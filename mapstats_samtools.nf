@@ -19,6 +19,6 @@ process mapstats_samtools {
     script:
 
     """
-    samtools flagstat $native16sams | tee ${sams.simpleName}_flagstat.txt
+    samtools flagstat $sams | tee ${sams.simpleName}_flagstat.txt
     """
 }

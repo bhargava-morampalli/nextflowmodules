@@ -20,7 +20,7 @@ process coverageplots {
     script:
 
     """
-    #!/usr/bin/env python
+    #! /home/bhargavam/mambaforge/bin/python
     import pandas as pd
     import matplotlib.pyplot as plt
     import seaborn as sns

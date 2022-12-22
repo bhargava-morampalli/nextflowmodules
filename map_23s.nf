@@ -9,7 +9,7 @@ process map_23s {
     
     tag "map native and ivt fastqs to 23s rRNA reference using minimap2"
 
-    container 'https://cloud.sylabs.io/library/bhargava-morampalli/containers/minimap2:2.24'
+    container '/home/bhargavam/Documents/containers/minimap2_2.24--h7132678_1.sif'
 
     input:
     path reference_23s

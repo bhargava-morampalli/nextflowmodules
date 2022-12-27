@@ -21,7 +21,7 @@ process nanodoccompare_16s {
 
     script:
     """
-    source ~/nanoDoc/src/venv3/bin/activate
+    source ~/nanoDoc/src/nanodoc/bin/activate
     python /home/bhargavam/nanoDoc/src/nanoDoc.py analysis -w /home/bhargavam/nanoDoc/weight5mer/ -p /home/bhargavam/nanoDoc/param20.txt -r $reference -rraw $ndoc_ivt -traw $ndoc_native -o ${ndoc_ivt.simpleName}.txt -s 1 -e 1980
     deactivate
     """

@@ -8,7 +8,7 @@ process tomboextract_16s {
 
     tag "extracting p values from tombo stat files for 16s"
 
-    container '/home/bhargavam/Documents/containers/ont-tombo_1.5.1--py36r36h39af1c6_2.sif'
+    conda '/home/bhargavam/mambaforge/envs/tombo'
 
     input:
     path statfile
@@ -20,7 +20,7 @@ process tomboextract_16s {
 
     script:
     """
-    #!/usr/bin/env python
+    #! /usr/bin/env python
     from tombo import tombo_helper, tombo_stats, resquiggle
     import pandas as pd
 

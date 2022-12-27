@@ -26,6 +26,6 @@ process f5ceventalign {
 
     script:
     """
-    /home/bhargavam/f5c-v0.7/f5c eventalign --scale-events --signal-index --print-read-names --rna -r $fastq -b $bam -g $referencefasta --summary ${fastq.simpleName}_summary.txt --threads 40 > ${fastq.simpleName}_eventalign.txt
+    f5c eventalign --scale-events --signal-index --print-read-names --rna -r $fastq -b $bam -g $referencefasta --summary ${fastq.simpleName}_summary.txt --threads 40 > ${fastq.simpleName}_eventalign.txt
     """
 }

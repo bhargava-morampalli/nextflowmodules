@@ -19,8 +19,8 @@ process nanodocpreprocess {
 
     script:
     """
-    source ~/nanoDoc/src/venv3/bin/activate
-    python /home/bhargavam/nanoDoc/src/nanoDoc.py formatfile -i $singlefast5s -o ./ -r $reference -t 50
+    source ~/nanoDoc/src/nanodoc/bin/activate
+    python /home/bhargavam/nanoDoc/src/nanoDoc.py formatfile -i $singlefast5s -o ./ -r $reference -t 20
     deactivate
     """
 }

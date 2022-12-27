@@ -26,6 +26,6 @@ process f5cindex {
 
     script:
     """
-    /home/bhargavam/f5c-v0.7/f5c index -t 24 -d $multifast5s $fastq
+    f5c index -t 24 -d $multifast5s $fastq
     """
 }

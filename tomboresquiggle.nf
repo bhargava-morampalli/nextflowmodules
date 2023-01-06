@@ -8,7 +8,7 @@ process tomboresquiggle {
 
     tag "resquiggle fast5s with tombo"
 
-    container '/home/bhargavam/Documents/containers/ont-tombo_1.5.1--py36r36h39af1c6_2.sif'
+    container '/home/bhargavam/Documents/containers/tombo_new.sif'
 
     input:
     path singlefast5s

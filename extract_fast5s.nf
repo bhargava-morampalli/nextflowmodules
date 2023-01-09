@@ -4,7 +4,7 @@
 
 process extract_fast5s {
 
-    publishDir "$params.outdir/fast5s_${idtextfile.simpleName}", mode:'copy'
+    publishDir "$params.outdir", mode:'copy'
     
     tag "extract multifast5s for mapped reads"
 
@@ -15,13 +15,13 @@ process extract_fast5s {
     path idtextfile
 
     output:
-    path "*.fast5", emit: subsetfast5s
-    path "filename_mapping.txt"
+    path "fast5s*", emit: subsetfast5s
     val true, emit: extractdone_ch
 
     script:
 
     """
-    fast5_subset -i $fast5inputpath -s ./ -l *.txt -f ${idtextfile.simpleName}- --recursive
+    mkdir -p fast5s_${idtextfile.simpleName}
+    fast5_subset -i $fast5inputpath -s fast5s_${idtextfile.simpleName} -l *.txt -f ${idtextfile.simpleName}- --recursive
     """
 }

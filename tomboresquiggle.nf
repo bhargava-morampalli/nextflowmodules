@@ -13,10 +13,9 @@ process tomboresquiggle {
     input:
     path singlefast5s
     path reference
-    val flag
 
     output:
-    path "*", optional: true
+    path "*", optional: true, emit: resquiggledone
     val true, emit: resquiggledone_ch
 
     script:
